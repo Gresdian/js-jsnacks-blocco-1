@@ -1,13 +1,13 @@
-/* CREAZIONE ARRAY VUOTO */
+
+let user_length = prompt('dichiara la quantità degli elementi');
+
 let numbers = [];
+for(let i=0; i<user_length; i++){
+    let num = Math.floor(Math.random() * 100 + 1)
+    numbers.push(num);
+}
+console.log(numbers);
 
-/* DICHIARAZIONE DELLA QUANTITA' DEGLI ELEMENTI PRESENTI DA PARTE DELL'UTENTE */
-numbers.lenght = prompt('dichiara la quantità degli elementi');
-
-for(i=1; i <= numbers.length; i++){
-    
-    for(num=1 ; num <= 100 ; num++)
-    num = Math.floor(Math.random() * 100 + 1)
-    numbers.push = num;
-
+for(let i=user_length -1; i>=user_length-5; i--){
+    console.log(numbers[i]);
 }
